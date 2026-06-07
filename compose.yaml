@@ -1,7 +1,7 @@
 services:
   mysql:
     container_name: mysql
-    image: dbimage
+    image: navyasrig/project_non_prod:dbimage
     deploy:
       resources:
         limits:
@@ -21,7 +21,7 @@ services:
   
   quiz:
     container_name: quiz
-    image: appimage1
+    image: navyasrig/project_non_prod:appimage
     deploy:
       resources:
         limits:
